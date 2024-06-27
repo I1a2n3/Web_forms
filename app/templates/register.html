@@ -27,10 +27,10 @@
                     {% endfor %}
                 </p>
                 <p>
-                    {{ form.remember_me() }} {{ form.remember_me.label }}
+                    {{ form.submit() }}
                 </p>
                 <p>
-                    {{ form.submit() }}
+                    <a href="{{ url_for('login') }}">login</a>
                 </p>
             </form>
         </div>
